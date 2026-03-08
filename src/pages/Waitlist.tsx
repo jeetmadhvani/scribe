@@ -64,13 +64,15 @@ const Waitlist = () => {
       <div className="flex flex-col items-center w-full flex-1 justify-center px-4">
 
         {/* DemoBox scales itself via CSS transform */}
+        <div className="w-full flex justify-center">
         <DemoBox />
+        </div>
 
         <div className="flex flex-col items-center gap-6 md:gap-8 -mt-2 z-10 w-full max-w-2xl">
 
           {/* Headline */}
-          <div className="flex flex-col items-center gap-3 text-center">
-            <h1 className="text-primary font-heading font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl w-6xl leading-tight">
+          <div className="flex flex-col items-center gap-3 text-center px-6">
+            <h1 className="text-primary font-heading font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl max-w-6xl leading-tight">
               Write more. Sound like you.
             </h1>
             <p className="text-muted font-body text-base md:text-lg max-w-xl px-2">
