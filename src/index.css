@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'playfairDisplay';
+  src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'dmSans';
+  src: url('fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf');
+}
+
+body {
+  background-color: #FAFAF8;
+  color: #1A1A1A;
+  font-family: "dmSans", sans-serif;
+}
+
+html, body {
+  overflow-x: clip;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+@theme {
+
+  --font-heading: 'playfairDisplay', sans-serif;
+  --font-body: 'dmSans', sans-serif;
+
+  --color-main-bg: #FAFAF8;
+  --color-card-bg: #FFFFFF;
+  --color-cta: #111111;
+  --color-subheading-bg: #EEECFD;
+
+  --color-primary: #1A1A1A;
+  --color-muted: #6B7280;
+  --color-light: #9CA3AF;
+
+  --color-accent: #4F46E5;
+  --color-light-accent: #817BE6;
+
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 32px)); }
+}
+@keyframes marquee2 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 16px)); }
+}
+
+.marquee-track {
+  animation: marquee 20s linear infinite;
+}
+.marquee-track2 {
+  animation: marquee2 20s linear infinite;
+}
