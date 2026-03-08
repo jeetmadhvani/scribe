@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import DemoBox from "../waitlist/components/DemoBox";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { supabase } from "../lib/supabase";
 
 const Waitlist = () => {
