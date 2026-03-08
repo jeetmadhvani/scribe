@@ -9,7 +9,7 @@ const Waitlist = () => {
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [count, setCount] = useState<number | null>(null);
+//   const [count, setCount] = useState<number | null>(null);
 
   const handleSubmit = async () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -37,15 +37,15 @@ const Waitlist = () => {
     setSubmitted(true);
   };
 
-  useEffect(() => {
-    const fetchCount = async () => {
-      const { count } = await supabase
-        .from("waitlist")
-        .select("*", { count: "exact", head: true });
-      setCount(count);
-    };
-    fetchCount();
-  }, []);
+//   useEffect(() => {
+//     const fetchCount = async () => {
+//       const { count } = await supabase
+//         .from("waitlist")
+//         .select("*", { count: "exact", head: true });
+//       setCount(count);
+//     };
+//     fetchCount();
+//   }, []);
 
   return (
     <div className="relative min-h-screen w-full bg-main-bg flex flex-col overflow-clip">
